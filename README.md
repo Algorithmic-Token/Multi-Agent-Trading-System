@@ -79,12 +79,16 @@ quant-committee/
 
 ## Installation
 1 Clone the Repository
+
 Bash
+
 git clone https://github.com/your-org/quant-committee.git
 cd quant-committee
 
 2 Set up Environment
+
 Bash
+
 cp .env.example .env
 # Edit .env with your API keys
 
