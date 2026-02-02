@@ -83,22 +83,28 @@ quant-committee/
 Bash
 
 git clone https://github.com/your-org/quant-committee.git
+
 cd quant-committee
 
 2 Set up Environment
 
 Bash
 
-cp .env.example .env
-# Edit .env with your API keys
+cp .env.example .env  //Edit .env with your API keys//
+
 
 3 Run the "Factory" (Generate a Strategy)
 To spin up the Agentic Engineering loop that builds a new strategy:
+
 Bash
+
 python -m factory.main --request "Create a mean-reversion strategy for US10Y Bonds using RSI divergence"
 
+
 4 Run the Trading Engine (Live/Paper)
+
 Bash
+
 python main.py --mode paper --portfolio "Conservative_Mix"
 
 
