@@ -49,7 +49,15 @@ A CI/AI pipeline that builds the strategies:
 Bash 
 
 quant-committee/
-├── .github/workflows/         #  CI/CD pipelines
+
+├── .github/workflows/         # CI/CD pipelines
+
+├── core/
+│   ├── agents/           # Agent definitions (Fundamental, Risk, Tech)
+
+
+
+
 
 
 
