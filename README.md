@@ -55,6 +55,21 @@ quant-committee/
 ├── core/
 │   ├── agents/           # Agent definitions (Fundamental, Risk, Tech)
 
+│   ├── memory/           # Redis/Vector DB connectors
+│   └── instruments/      # Asset class abstractions (Equity, Bond, Token)
+
+├── factory/              # The Agentic Engineering Loop
+
+│   ├── architect.py      # Spec generation
+
+│   ├── auditor.py        # Financial logic verification
+
+│   └── sandbox/          # Docker execution environment
+
+├── strategies/           # Generated trading strategies (Output of Factory)
+
+└── main.py               # Entry point for the Trading Engine
+
 
 
 
