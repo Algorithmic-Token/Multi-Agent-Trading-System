@@ -46,6 +46,9 @@ A CI/AI pipeline that builds the strategies:
 
 # 📂 Repository Structure
 
+Bash
+
+
 quant-committee/
 ├── .github/workflows/    # CI/CD pipelines
 ├── core/
@@ -58,5 +61,6 @@ quant-committee/
 │   └── sandbox/          # Docker execution environment
 ├── strategies/           # Generated trading strategies (Output of Factory)
 └── main.py               # Entry point for the Trading Engine
+
 
 
