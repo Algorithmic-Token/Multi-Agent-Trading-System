@@ -70,6 +70,56 @@ quant-committee/
 
 └── main.py               # Entry point for the Trading Engine
 
+# ⚡ Getting Started
+
+## Prerequisites
+* Python 3.11+
+* Docker (for local sandboxing)
+* API Keys: OpenAI, Anthropic, Financial Data Provider (e.g., Polygon/Alpaca)
+
+## Installation
+1 Clone the Repository
+Bash
+git clone https://github.com/your-org/quant-committee.git
+cd quant-committee
+
+2 Set up Environment
+Bash
+cp .env.example .env
+# Edit .env with your API keys
+
+3 Run the "Factory" (Generate a Strategy)
+To spin up the Agentic Engineering loop that builds a new strategy:
+Bash
+python -m factory.main --request "Create a mean-reversion strategy for US10Y Bonds using RSI divergence"
+
+4 Run the Trading Engine (Live/Paper)
+Bash
+python main.py --mode paper --portfolio "Conservative_Mix"
+
+
+# 🗺 Roadmap
+
+* [x] Phase 1: Core Architecture & Analyst Agent Prompts (Equities/Bonds/Crypto).
+* [x] Phase 2: Agentic Engineering Boilerplate (LangGraph Factory).
+* [ ] Phase 3: Sandbox Integration (Docker/E2B) & Backtesting Engine connection.
+* [ ] Phase 4: Live Data Ingestion Pipelines (WebSockets).
+* [ ] Future: Expansion to Private Credit (Document-heavy analysis).
+
+# ⚠️ Disclaimer
+This software is for educational and research purposes only. It is not financial advice. The "Auditor Agent" significantly reduces but does not eliminate the risk of algorithmic error. Use with paper money or strictly limited capital until fully validated.
+
+
+## Next Step
+This file is ready to be saved as README.md in your root folder.
+Would you like me to now generate the folder structure (create the actual directories and empty __init__.py files) to match this README?
+
+
+
+
+
+
+
 
 
 
